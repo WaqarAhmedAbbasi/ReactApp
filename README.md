@@ -36,10 +36,11 @@ class CommentBox extends React.Component {
 ReactDOM.render(<CommentBox />, document.getElementById('content'));}
 
 5)	Add scripts sources in _Layout.cshtml file
-       <script src="@Url.Content("~/Scripts/react/react.min.js")"></script>
-    <script src="@Url.Content("~/Scripts/react/react-dom.min.js")"></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-
+ <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+ <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+ <!-- Add Babel Standalone for in-browser JSX transpiling -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+ 
 6)	Add external script in Index.cshtml file
 <script src="~/Scripts/App/HelloWorld.js" type="text/babel"></script>
 
